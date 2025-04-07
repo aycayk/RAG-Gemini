@@ -1,14 +1,25 @@
 import numpy as np
 import faiss
 import time
+import os
 import requests
 import streamlit as st
 from sentence_transformers import SentenceTransformer
 from pdf_utils import pdf_to_text, clean_text, split_into_chunks
 
 @st.cache_resource
-def load_model(model_name):
-    return SentenceTransformer(model_name)
+def load_model(model_name: str):
+    # Transformer’ı tamamen offline moda al
+    os.environ["TRANSFORMERS_OFFLINE"] = "1"
+    os.environ["HF_DATASETS_OFFLINE"] = "1"
+
+    # Local cache klasöründeki model yolunu belirle
+    local_path = f"model_cache/{model_name.split('/')[-1]}"
+    return SentenceTransformer(
+        local_path,
+        cache_folder="model_cache",
+        local_files_only=True
+    )
 
 def build_combined_index(uploaded_files, model_name="all-MiniLM-L6-v2", chunk_size=500):
     model_emb = load_model(model_name)
