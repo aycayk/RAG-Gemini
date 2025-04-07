@@ -1,0 +1,15 @@
+# Streamlit secrets
+.streamlit/secrets.toml
+# Alternatif: doğrudan proje kökünde secrets.toml varsa
+secrets.toml
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# VSCode, macOS vs.
+.vscode/
+.DS_Store
+
+
