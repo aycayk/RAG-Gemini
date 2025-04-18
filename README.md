@@ -9,12 +9,7 @@
 - [Project Overview](#project-overview)  
 - [Features](#features)  
 - [Installation](#installation)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Example](#example)  
-- [Contributing](#contributing)  
-- [License](#license)  
-
+- [Project Structure](#Project Structure)  
 ---
 
 ## Project Overview
@@ -48,7 +43,6 @@ This project provides a **Retrieval‑Augmented Generation** pipeline that takes
 
 ---
 
-## Project Structure
 ## Project Structure
 
 ```plain
