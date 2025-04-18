@@ -9,7 +9,7 @@
 - [Project Overview](#project-overview)  
 - [Features](#features)  
 - [Installation](#installation)  
-- [Project Structure](#Project Structure)  
+- [Project Structure](#Project-Structure)  
 ---
 
 ## Project Overview
