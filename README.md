@@ -49,7 +49,10 @@ This project provides a **Retrieval‑Augmented Generation** pipeline that takes
 ---
 
 ## Project Structure
+## Project Structure
 
+```plain
+RAG‑Gemini/
 ├── chat_prompt.py         # Defines query and instruction prompts
 ├── conversation_utils.py  # Selects, compresses, expands chat history and builds final prompt
 ├── download_model.py      # Script to download local model or tokenizer
