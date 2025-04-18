@@ -40,12 +40,12 @@ This project provides a **Retrieval‑Augmented Generation** pipeline that takes
    git clone https://github.com/aycayk/RAG-Gemini.git
    cd RAG-Gemini
 3. Install dependencies:
-   ``bash
+   ```bash
    pip install -r requirements.txt
-
-5. Set your Gemini API key as an environment variable:
-  ``bash
+4. Set your Gemini API key as an environment variable:
+     ```bash
    export GEMINI_API_KEY="your_api_key_here"
+
 ---
 
 ## Project Structure
