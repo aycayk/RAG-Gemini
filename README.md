@@ -29,7 +29,7 @@ This project provides a **Retrieval‑Augmented Generation** pipeline that takes
 
 ## Installation
 
-1. **Python 3.8+** is required.  
+1. **Python 3.9+** is required.  
 2. Clone the repository:  
    ```bash
    git clone https://github.com/aycayk/RAG-Gemini.git
